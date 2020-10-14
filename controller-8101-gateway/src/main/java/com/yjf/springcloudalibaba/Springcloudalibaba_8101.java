@@ -19,7 +19,7 @@ public class Springcloudalibaba_8101 {
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route(r -> r.path("/nihao")
-                        .uri("http://www.baidu.com")
+                        .uri("https://github.com/yingjianfeng")   //不知道为什么 http://www.baidu.com 不能跳
                 ).build();
     }
 }

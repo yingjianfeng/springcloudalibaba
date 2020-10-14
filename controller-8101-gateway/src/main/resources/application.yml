@@ -15,6 +15,6 @@ spring:
           predicates:
             - Path=/dalaoyang/**
         - id: hello
-          uri: http://www.dalaoyang.cn/
+          uri: https://github.com/yingjianfeng
           predicates:
             - Path=/hello/**
