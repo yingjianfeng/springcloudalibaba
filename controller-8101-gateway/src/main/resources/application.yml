@@ -1,0 +1,20 @@
+server:
+  port: 8101
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    gateway:
+      routes:
+        - id: dalaoyang
+          uri: http://www.dalaoyang.cn/
+          predicates:
+            - Path=/dalaoyang/**
+        - id: hello
+          uri: http://www.dalaoyang.cn/
+          predicates:
+            - Path=/hello/**
