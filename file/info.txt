@@ -1,0 +1,5 @@
+Spring Cloud Alibaba 2.1.0 RELEASE对应的Spring Cloud Greenwich版本
+Spring Cloud Alibaba 2.2.0 RELEASE对应的Spring Cloud Hoxton.RELEASE版本
+Spring Cloud Alibaba 2.2.1 RELEASE对应的Spring Cloud Hoxton.SR3版本
+http://182.254.166.73:8162/admin/queues.jsp   mq
+http://182.254.166.73:8858/#/login sentinel    本地可以 服务器不行     java -jar -Dserver.port=8858 sentinel-dashboard-1.8.0.jar
