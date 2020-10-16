@@ -1,6 +1,7 @@
 server:
   port: 8101
-
+  servlet:
+    context-path:
 spring:
   application:
     name: api-gateway
@@ -11,7 +12,9 @@ spring:
     gateway:
       routes:
         - id: hello
-          uri: http://www.yjf.com:8102/get/getMapping
+          uri: http://127.0.0.1:8001/getPort
           predicates:
             - Path=/hello/**
             - Method=GET
+          filters:
+            - StripPrefix=1
